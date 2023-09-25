@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/simulacion.css">
+    <title>Servicios</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navegar">
+            <a href="../index.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a class="serv desactivado" href="#">Servicios</a>
+            <a href="./contacto.html">Contacto</a>
+            <button class="btnLogin-popup">Iniciar Sesión</button>
+            <button class="btnLogout desactivalogout">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <main class="container" id="contenedor">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-6 etiqueta">Ingresar monto capital:</div>
+                <div class="col-6"><input class="form-control" id="icapital" type="text" placeholder="capital"
+                        aria-label="default input example"></div>
+            </div>
+            <div class="row">
+                <div class="col-6 etiqueta">Ingresar nro. de cuotas:</div>
+                <div class="col-6"><input class="form-control" id="icuotas" type="text" placeholder="cuotas"
+                        aria-label="default input example"></div>
+            </div>
+            <div class="row">
+                <div class="col-6 etiqueta">ingresar TEA:</div>
+                <div class="col-6"><input class="form-control" id="itea" type="text" placeholder="tasa de interes anual"
+                        aria-label="default input example"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" id="isimular" class="btn btn-primary" onclick="simulacion()">Simular</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+
+        </div>
+        <br>
+        <br>
+        <div id="fondoresultado" class="fondores">
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/simulacion.js"></script>
+    <script src="../js/login.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

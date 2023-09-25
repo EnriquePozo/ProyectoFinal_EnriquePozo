@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navegar">
+            <a href="../index.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a class="serv desactivado" href="./servicios.html">Servicios</a>
+            <a href="#">Contacto</a>
+            <button class="btnLogin-popup">Iniciar Sesión</button>
+            <button class="btnLogout desactivalogout">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <div class="capsula">
+        <span class="cerrar">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <div class="ingresartexto">
+                    <span class="icono"><ion-icon name="mail"></ion-icon></span>
+                    <input id="lemail" placeholder="email" type="email" required>
+                    <!--<label>Email</label>-->
+                </div>
+                <div class="ingresartexto">
+                    <span class="icono"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="lpassword" placeholder="password" type="password" required>
+                    <!--<label>Password</label>-->
+                </div>
+                <div class="recordar-olvidar">
+                    <label><input type="checkbox">Recordarme</label>
+                    <a href="#">Olvidó su clave?</a>
+                </div>
+                <button type="submit" class="btn" onclick="Ingresar()">Ingresar</button>
+                <div class="registrar">
+                    <p>Aún no tiene cuenta?<a href="#" class="link-registrar">Registrar</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box registro">
+            <h2>Registrarse</h2>
+            <form action="#">
+                <div class="ingresartexto">
+                    <span class="icono"><ion-icon name="person"></ion-icon></span>
+                    <input id="rusuario" placeholder="username" type="text" required>
+                    <!--<label>Username</label>-->
+                </div>
+                <div class="ingresartexto">
+                    <span class="icono"><ion-icon name="mail"></ion-icon></span>
+                    <input id="remail" placeholder="email" type="email" required>
+                    <!--<label>Email</label>-->
+                </div>
+                <div class="ingresartexto">
+                    <span class="icono"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="rpassword" placeholder="password" type="password" required>
+                    <!--<label>Password</label>-->
+                </div>
+                <div class="recordar-olvidar">
+                    <label><input type="checkbox">Acepto los terminos y condiciones</label>
+                </div>
+                <button type="submit" class="btn" onclick="Registrar()">Registrar</button>
+                <div class="registrar">
+                    <p>Posee una cuenta activa?<a href="#" class="link-iniciar">Iniciar Sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
